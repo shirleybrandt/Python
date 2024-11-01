@@ -1,3 +1,5 @@
+# demo 2.6. Introductie van functie met parameters
+
 def say_hello(name):
     print('Hello, ', name, '!', sep='')
 
