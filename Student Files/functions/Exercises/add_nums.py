@@ -51,3 +51,17 @@ def main():
 
 main()
 
+
+# als je geen parameters / argumenten meegeeft dan zie je dat de functie niet werkt. Om dat te omzeilen, kan je ervoor kiezen een default  waarde toe te voegen zodat de functie blijft werken
+# deze default waarde wordt dus alleen gebruikt op het moment dat er geen andere parameters worden meegegeven.
+
+def add_nums(num1 = 0, num2 = 0):
+    total = int(num1) + int(num2)
+    print(num1, '+', num2, '=', total)
+
+def main():
+    add_nums(3,6)
+    add_nums(10,12)
+    add_nums()
+
+main()
