@@ -4,3 +4,11 @@ def main():
     print('Wow! Vandaag is het', today)
 
 main()
+
+
+# Exercise 4: Hello, You!
+def name():
+    name = input('Wat is jouw naam? ')
+    print('Hi, ', name, '!', sep = '')
+
+name()
