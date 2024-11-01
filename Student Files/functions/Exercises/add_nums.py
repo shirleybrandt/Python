@@ -33,5 +33,21 @@ def add_nums(num1, num2):
 def main():
     add_nums(3,6)
     add_nums(10,12)
+    add_nums('q','a')
 
 main()
+
+
+# Het blijkt dat deze functie ook werkt op een manier die wij niet willen, namelijk dat ook letters of symbolen bij elkaar worden opgeteld (achter elkaar geplakt)
+# Dit kun je oplossen door de input geforceerd om te zetten naar een int. In het geval van een string kan dit niet, dus geeft hij een foutmelding. Dit is wat we willen
+def add_nums(num1, num2):
+    total = int(num1) + int(num2)
+    print(num1, '+', num2, '=', total)
+
+def main():
+    add_nums(3,6)
+    add_nums(10,12)
+    add_nums('q','a')
+
+main()
+
