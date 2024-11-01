@@ -3,7 +3,9 @@
 
 # Import date class from datetime module
 from datetime import date
+from functions import main
 
 vandaag = date.today()
 
 print('Vandaag is het', vandaag)
+main()
