@@ -1,0 +1,19 @@
+# voorbeeld LESSON 1 pagina 28
+
+f = open("readme.txt") # Open my-file.txt and assign result to f.
+content = f.read() # Read contents of file into content variable.
+print(content) # Print content.
+f.close() # Close the file.
+
+
+# with (open) is een commando dat een subblok nodig heeft
+# doel is hetzelfde als in de code hierboven, maar je hoeft de close functie niet te gebruiken omdat dat al zit in de 'with as' zit
+with open("readme.txt") as f:
+    content = f.read()
+    print(content)
+
+
+# hier ga je ook iets schrijven in een bestand. Let op, je moet hier de 'w' (staat voor write) als value doorgeven. 'r' is voor reading en 'a' is voor appending
+# de default value is 'r', that's why we didn't need to pass a value in when opening the file for reading. In this case, we want to write, so we have to pass in the value 'w'
+with open("tekst_schrijven.txt", "w") as f:
+    f.write("Hello, world!!!!!")
